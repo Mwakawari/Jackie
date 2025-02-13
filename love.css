@@ -30,7 +30,13 @@ body {
   filter: blur(0.1vmin);
   background-image: radial-gradient(ellipse at top, transparent 0%, var(--dark-color)), radial-gradient(ellipse at bottom, var(--dark-color), rgba(145, 233, 255, 0.2)), repeating-linear-gradient(220deg, black 0px, black 19px, transparent 19px, transparent 22px), repeating-linear-gradient(189deg, black 0px, black 19px, transparent 19px, transparent 22px), repeating-linear-gradient(148deg, black 0px, black 19px, transparent 19px, transparent 22px), linear-gradient(90deg, #d900ff, #f0f0f0);
 }
+#message-1{
+  color: #23f0ff;
 
+}
+#message-2{
+  color:yellow;
+}
 .flowers {
   position: relative;
   transform: scale(0.9);

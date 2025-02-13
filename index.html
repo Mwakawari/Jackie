@@ -8,11 +8,12 @@
 </head>
 <body>
     <div>
-        <audio controls autoplay class="audio-player">
+        <audio controls class="audio-player">
             <source src="tatiana.mp3" type="audio/mpeg">
             <source src="path/to/your/song.ogg" type="audio/ogg">
             Your browser does not support the audio element.
         </audio>
+        <button onclick="playAudio() " class="Play">Click to Play Audio&#x2764;&#xFE0F;</button>
     </div>
 <body class="not-loaded">
     <div class="night">
@@ -318,6 +319,16 @@
 
     <!-- Javascript here -->
 <script src="love.js"></script>
+<script>
+        function playAudio() {
+            var audio = document.getElementById('myAudio');
+            audio.play().then(() => {
+                // Audio is playing
+            }).catch(error => {
+                alert('Please enable audio permissions in your browser settings to play sound.');
+            });
+        }
+</script>
 </body>
 </html>
 

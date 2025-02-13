@@ -19,6 +19,33 @@ body {
   overflow: hidden;
   perspective: 1000px;
 }
+/* Base styles for all devices */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.audio-player {
+  width: 100%;
+}
+
+/* Styles for tablets and larger devices */
+@media (min-width: 600px) {
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+/* Styles for desktop and larger screens */
+@media (min-width: 1024px) {
+  .content {
+    max-width: 1200px;
+  }
+}
+
 
 .night {
   position: fixed;
